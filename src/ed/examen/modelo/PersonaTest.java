@@ -44,12 +44,8 @@ public class PersonaTest {
 
 	@Test
 	public void testSetNombre() {
-		// clase valida
-		try {
-			p.setDni("Andy");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
+		p.setNombre("Andy");
 		assertEquals("Andy", p.getDni());
 
 	}
@@ -61,7 +57,10 @@ public class PersonaTest {
 
 	@Test
 	public void testSetApellido1() {
-		fail("Not yet implemented");
+		
+		p.setApellido1("Cabral");
+		assertEquals("Cabral", p.getApellido1());
+		
 	}
 
 }
