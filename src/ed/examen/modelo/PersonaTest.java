@@ -32,7 +32,7 @@ public class PersonaTest {
 		try {
 			p.setDni("012345678");
 		} catch (Exception e) {
-			lanzaExcepcion= true;
+			lanzaExcepcion = true;
 		}
 		assertTrue(lanzaExcepcion);
 	}
@@ -44,7 +44,14 @@ public class PersonaTest {
 
 	@Test
 	public void testSetNombre() {
-		fail("Not yet implemented");
+		// clase valida
+		try {
+			p.setDni("Andy");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		assertEquals("Andy", p.getDni());
+
 	}
 
 	@Test
