@@ -6,8 +6,8 @@ import org.junit.Test;
 
 public class PersonaTest {
 
-	Persona p = new Persona ("12345678B", "Andrea", "Cabral");
-	
+	Persona p = new Persona("12345678B", "Andrea", "Cabral");
+
 	@Test
 	public void testPersonaStringStringString() {
 		fail("Not yet implemented");
@@ -20,7 +20,21 @@ public class PersonaTest {
 
 	@Test
 	public void testSetDni() {
-		fail("Not yet implemented");
+		// clase valida
+		try {
+			p.setDni("87654321d");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		assertEquals("87654321d", p.getDni());
+
+		Boolean lanzaExcepcion = false;
+		try {
+			p.setDni("012345678");
+		} catch (Exception e) {
+			lanzaExcepcion= true;
+		}
+		assertTrue(lanzaExcepcion);
 	}
 
 	@Test
