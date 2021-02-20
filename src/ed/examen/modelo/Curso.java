@@ -3,11 +3,17 @@ package ed.examen.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * @author Andrea
+ *
+ */
+
 public class Curso {
 	
 	private List<Persona> listaAlumnos;
 
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public void eliminarAlumno(String dni) throws Exception {
@@ -18,14 +24,14 @@ public class Curso {
 		}
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public Boolean estaRegistrado(String dni) {
@@ -40,14 +46,14 @@ public class Curso {
 		return encontrado;
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public Curso() {
 		listaAlumnos= new ArrayList<Persona>();
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public Integer numeroAlumnos() {return listaAlumnos.size();}

@@ -1,5 +1,11 @@
 package ed.examen.modelo;
 
+/**
+ * 
+ * @author Andrea
+ *
+ **/
+
 public class Persona{
 	
 	private String dni;
@@ -8,7 +14,7 @@ public class Persona{
 	
 	public Persona() {}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public Persona(String dni, String nombre, String apellido1) {
@@ -17,7 +23,7 @@ public class Persona{
 		this.apellido1 = apellido1;
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public String getDni() {
@@ -25,7 +31,7 @@ public class Persona{
 	}
 	
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public void setDni(String dni) throws Exception {
@@ -37,30 +43,30 @@ public class Persona{
 		}
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public String getNombre() {
 		return nombre;
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
 	 * */
 	public String getApellido1() {
 		return apellido1;
 	}
 	
-	/*
+	/**
 	 * Documentar y crear test unitario
-	 * */
+	 **/
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
 	}
