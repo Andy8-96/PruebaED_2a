@@ -10,7 +10,10 @@ public class PersonaTest {
 
 	@Test
 	public void testPersonaStringStringString() {
-		fail("Not yet implemented");
+		Persona p = new Persona("12345678B", "Andrea", "Cabral");
+		assertEquals("12345678B",p.getDni());
+		assertEquals("Andrea",p.getNombre());
+		assertEquals("Cabral",p.getApellido1());
 	}
 
 	@Test
