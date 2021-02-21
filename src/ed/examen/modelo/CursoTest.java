@@ -45,7 +45,8 @@ public class CursoTest {
 
 	@Test
 	public void testCurso() {
-		
+		Curso c = new Curso();
+		assertTrue(c.numeroAlumnos()==0);
 	}
 
 	@Test
