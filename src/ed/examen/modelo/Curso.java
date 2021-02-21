@@ -12,7 +12,7 @@ import java.util.List;
 public class Curso {
 	
 	private List<Persona> listaAlumnos;
-
+	
 	/**
 	 * Documentar y crear test unitario
 	 * */
