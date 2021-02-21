@@ -37,7 +37,10 @@ public class CursoTest {
 
 	@Test
 	public void testEstaRegistrado() {
-		fail("Not yet implemented");
+		c.aniadirAlumno(new Persona ("12345678c","Pepito", "de los Palotes"));
+		assertTrue(c.estaRegistrado("12345678c"));
+		
+		assertFalse(c.estaRegistrado("87654321v"));
 	}
 
 	@Test
