@@ -1,9 +1,9 @@
 package ed.examen.modelo;
 
 /**
- * 
+ * Una clase para representar a una persona en un curso
  * @author Andrea
- *
+ * @version 1.0
  **/
 
 public class Persona{
@@ -15,8 +15,11 @@ public class Persona{
 	public Persona() {}
 	
 	/**
-	 * Documentar y crear test unitario
-	 * */
+	 * Inicializa la persona
+	 * @param dni DNI de la persona
+	 * @param nombre Nombre de la persona 
+	 * @param apellido1 El primer apellido de la persona
+	 **/
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
@@ -24,16 +27,19 @@ public class Persona{
 	}
 	
 	/**
-	 * Documentar y crear test unitario
-	 * */
+	 * Obtiene el DNI de la persona
+	 * @return Devuelve el DNI
+	 **/
 	public String getDni() {
 		return dni;
 	}
 	
 	
 	/**
-	 * Documentar y crear test unitario
-	 * */
+	 * Comprueba que el DNI de la persona introducido es correcto, si no lanza una Excepcion
+	 * @param dni DNI de la persona
+	 * @throws Exception Lanza la excepcion si el ultimo caracter de DNI no es una letra
+	 **/
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()))) {
@@ -44,28 +50,32 @@ public class Persona{
 	}
 	
 	/**
-	 * Documentar y crear test unitario
-	 * */
+	 * Obtiene el Nombre de la persona
+	 * @return Devuelve el nombre
+	 **/
 	public String getNombre() {
 		return nombre;
 	}
 	
 	/**
-	 * Documentar y crear test unitario
-	 * */
+	 * Modifica el nombre de la persona
+	 * @param nombre Nuevo nombre a recibir de la persona
+	 **/
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
 	/**
-	 * Documentar y crear test unitario
-	 * */
+	 * Obtiene el primero Apellido de persona
+	 * @return Devuelve el primero Apellido
+	 **/
 	public String getApellido1() {
 		return apellido1;
 	}
 	
 	/**
-	 * Documentar y crear test unitario
+	 * Modifica el primero Apellido de la persona
+	 * @param apellido1 Nuevo apellido a recibir de la persona
 	 **/
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
