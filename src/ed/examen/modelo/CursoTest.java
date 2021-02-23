@@ -13,7 +13,6 @@ public class CursoTest {
 	public void testEliminarAlumno() {
 		
 		try {
-			c.aniadirAlumno(p);
 			c.eliminarAlumno("12345678c");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -22,7 +21,6 @@ public class CursoTest {
 		
 		Boolean lanzarExcepcion = false;
 		try {
-			c.aniadirAlumno(new Persona ("12345678c","Pepito", "de los Palotes"));
 			c.eliminarAlumno("123456780");
 		} catch (Exception e) {
 			lanzarExcepcion = true;

@@ -49,7 +49,7 @@ public class PersonaTest {
 	public void testSetNombre() {
 		
 		p.setNombre("Andy");
-		assertEquals("Andy", p.getDni());
+		assertEquals("Andy", p.getNombre());
 
 	}
 
