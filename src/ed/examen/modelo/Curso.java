@@ -51,6 +51,7 @@ public class Curso {
 		while (!encontrado && i < listaAlumnos.size()) {
 			if (listaAlumnos.get(i).getDni().equals(dni)) {
 				encontrado = true;
+				
 			}
 			i++;
 		}

@@ -7,12 +7,13 @@ import org.junit.Test;
 public class CursoTest {
 
 	Curso c = new Curso();
+	Persona p = new Persona ("12345678c","Pepito", "de los Palotes");
 	
 	@Test
 	public void testEliminarAlumno() {
 		
 		try {
-			c.aniadirAlumno(new Persona ("12345678c","Pepito", "de los Palotes"));
+			c.aniadirAlumno(p);
 			c.eliminarAlumno("12345678c");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -31,13 +32,13 @@ public class CursoTest {
 
 	@Test
 	public void testAniadirAlumno() {
-		c.aniadirAlumno(new Persona ("12345678c","Pepito", "de los Palotes"));
+		c.aniadirAlumno(p);
 		assertTrue(c.estaRegistrado("12345678c"));
 	}
 
 	@Test
 	public void testEstaRegistrado() {
-		c.aniadirAlumno(new Persona ("12345678c","Pepito", "de los Palotes"));
+		c.aniadirAlumno(p);
 		assertTrue(c.estaRegistrado("12345678c"));
 		
 		assertFalse(c.estaRegistrado("87654321v"));
