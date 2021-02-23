@@ -21,7 +21,7 @@ public class CursoTest {
 		
 		Boolean lanzarExcepcion = false;
 		try {
-			c.eliminarAlumno("123456780");
+			c.eliminarAlumno("21");
 		} catch (Exception e) {
 			lanzarExcepcion = true;
 		}

@@ -1,7 +1,6 @@
 package ed.examen.modelo;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -21,12 +20,7 @@ public class Curso {
 	 **/
 	public void eliminarAlumno(String dni) throws Exception {
 		if (dni.length() == 9) {// comprobar la longitud del dni
-			for (Iterator iterator = listaAlumnos.iterator(); iterator.hasNext();) {
-				Persona persona = (Persona) iterator.next();
-				if(dni.equals(persona.getDni()))
-					listaAlumnos.remove(persona); // solo hace falta el dni
-				break;
-			}
+				listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
 		} else {
 			throw new Exception("El dni no tiene la longitud adecuada");
 		}

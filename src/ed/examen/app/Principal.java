@@ -9,8 +9,9 @@ public class Principal {
 
 	static Curso c;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		c = new Curso();
+		
 		Integer opcion = mostrarMenuYRecogerOpcion();
 		while(opcion!=0) {
 			procesarOpcion(opcion);
